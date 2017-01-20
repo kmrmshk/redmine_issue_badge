@@ -3,6 +3,7 @@ class CreateIssueBadgeUserSettings < ActiveRecord::Migration
     create_table :issue_badge_user_settings do |t|
       t.integer :user_id
       t.boolean :enabled
+      t.integer :threshold_done_ratio
       t.column :created_on, :timestamp
       t.column :updated_on, :timestamp
     end

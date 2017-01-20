@@ -3,4 +3,8 @@
     <%=content_tag(:label, l(:label_activate_for_all_users))%>
     <%=check_box_tag 'settings[activate_for_all_users]', true, @settings['activate_for_all_users'] == "true" %>
   </p>
+  <p>
+    <%=content_tag(:label, l(:label_threshold_done_ratio))%>
+    <%=text_field_tag 'settings[threshold_done_ratio]', @settings['threshold_done_ratio'] %>
+  </p>
 </div>
