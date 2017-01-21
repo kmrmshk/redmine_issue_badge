@@ -5,6 +5,7 @@
   </p>
   <p>
     <%=content_tag(:label, l(:label_threshold_done_ratio))%>
-    <%=text_field_tag 'settings[threshold_done_ratio]', @settings['threshold_done_ratio'] %>
+    <%=text_field_tag 'settings[threshold_done_ratio]', @settings['threshold_done_ratio'], :maxlength => '3', :style => 'width: 4em;' %>
+    (%)
   </p>
 </div>
