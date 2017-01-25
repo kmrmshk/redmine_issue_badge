@@ -8,7 +8,7 @@ class IssueBadgeUserSetting < ActiveRecord::Base
     unless issue_badge
       issue_badge = IssueBadgeUserSetting.new
       issue_badge.user_id = user_id
-      issue_badge.threshold_done_ratio = 100
+      issue_badge.threshold_done_ratio = Setting.plugin_redmine_issue_badge['threshold_done_ratio']
     end
     issue_badge
   end
