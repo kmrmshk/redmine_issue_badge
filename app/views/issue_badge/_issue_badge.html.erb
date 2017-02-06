@@ -5,7 +5,7 @@ content_url = base_url + "/issue_badge/load_badge_contents"
 <% if @all_issues_count %>
     <div id="issue_badge">
       <li class="starting_point">
-        <%= link_to({controller:"projects", action:"prj", id:"issues"}, {id:"link_issue_badge", style:"cursor: pointer"}) do %>
+        <%= link_to({controller:"projects"}, {id:"link_issue_badge", style:"cursor: pointer"}) do %>
             <span id="issue_badge_number" class="badge"><%= @all_issues_count %></span>
         <% end %>
       </li>
